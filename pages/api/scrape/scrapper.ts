@@ -10,7 +10,7 @@ const ONE_HOUR = 60 * 60 * 1000;
 
 export async function scrapeIPLData() {
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: false,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
     defaultViewport: null,
     timeout: 60000,
